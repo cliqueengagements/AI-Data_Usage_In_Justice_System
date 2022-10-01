@@ -1,2 +1,5 @@
 # Automated-Facial-Recognition
-AIHACK4Good Facial Recognition Project
+
+<b>EVENT<b>: AIHACK4Good
+
+PROJECT NAME: Facial Recognition
