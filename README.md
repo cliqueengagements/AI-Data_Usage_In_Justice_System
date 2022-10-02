@@ -1,5 +1,3 @@
-# Automated-Facial-Recognition
+# MLH AIHACK4Good 2022 
 
-<b>EVENT<b>: AIHACK4Good
-
-PROJECT NAME: Facial Recognition
+PROJECT NAME: AI Data Usage In The Justice System
