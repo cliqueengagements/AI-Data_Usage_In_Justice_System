@@ -51,4 +51,19 @@ def rf(decile, priors, isviolent, sex, age, race, charge, score):
     df = pd.DataFrame({'decile':[decile],'priors_count':[priors],'is_violent_recid':[isviolent],'sex_Female':[sex_Female],'sex_Male':[sex_Male],'age_cat_25 - 45':[age_cat_25_45],'age_cat_Greater than 45':[age_cat_Greater],'age_cat_Less than 25':[age_cat_Less],'race_African-American':[race_AfricanAmerican],'race_Asian':[race_Asian],'race_Caucasian':[race_Caucasian],'race_Hispanic':[race_Hispanic],'race_Native':[race_NativeAmerican],'race_Other':[race_Other],'c_charge_degree_F':[charge_F],'c_charge_degree_M':[charge_M],'score_text_High':[score_H],'score_text_Low':[score_L],'score_text_Medium':[score_M]})
     rfprisoner = joblib.load('filename.pkl')
     prediction = rfprisoner.predict(df)
+    if (prediction == 1):
+        return 'Eligiible to be released'
+    else:
+        return 'Not eligible to be released'
 
+import pandas as pd
+import joblib
+d = int(input('Enter the decile score(Risk of Recidivism) '))
+p = int(input('Enter the priors(Prior offense count) '))
+v = int(input('Enter the isviolent(1 if violent, 0 if not) '))
+s = input('Enter the sex ')
+a = int(input('Enter the age of the criminal '))
+r = input('Enter the race of the criminal(African-American,Asian,caucasian,hispanic,Native american, others) ')
+c = input('Enter the charge(charge degree of original crime) ')
+sc = int(input('Enter the score text(category of decile score)'))
+rf(d,p,v,s,a,r,c,sc)
