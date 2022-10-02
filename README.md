@@ -5,7 +5,8 @@ PROJECT NAME: AI Data Usage In The Justice System
 Note to self: Run the RF_Prison.py to make it work
 
 
-Abstract
+# Abstract
+
 Across the nation, judges, probation and parole officers are increasingly using
 algorithms to assess a criminal defendant’s likelihood of becoming a recidivist. A tool called
 COMPAS is introduced and used in many jurisdictions around the U.S. to predict if a
