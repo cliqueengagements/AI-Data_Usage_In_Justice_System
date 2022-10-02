@@ -2,7 +2,7 @@
 
 PROJECT NAME: AI Data Usage In The Justice System
 
-Run the RF_Prison.py to make it work
+Note to self: Run the RF_Prison.py to make it work
 
 
 Abstract
